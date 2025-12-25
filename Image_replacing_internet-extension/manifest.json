@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Flavor Replacer",
+  "description": "Replaces every image on the web with something you like.",
+  "version": "1.0",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
